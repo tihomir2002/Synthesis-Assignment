@@ -1,0 +1,45 @@
+﻿@page
+@model SynthesisSite.Pages.TournamentsModel
+@{
+    ViewData["Title"] = "Tournament viewer";
+}
+
+
+    @if (@Model.Tournaments.Count > 0)
+    {
+
+        @foreach (var item in @Model.Tournaments)
+        {
+            <div id="torunamentDIV">
+                
+                @item.ToString()
+                
+                <br></br>
+                Name: @item.Name
+                Description: @item.Description
+                Location: @item.Location
+                Duration in days:@item.DurationDays
+                Sport: @item.Sport.Name
+                System: @item.TournamentSystem.Name
+                Minimum players: @item.MinPlayers
+                Maximum players: @item.MaxPlayers
+                Current players: @item.RegisteredPlayers
+                Start date: @item.StartDate.ToString()
+                <!--add schedule-->
+
+                <!--if registered<min players show remaining phases are not applicable?-->
+                @if(HttpContext.Session.GetString("userType") == "Player")
+                {
+                    <form method="post">
+                    <input type="number" asp-for=@Model.TournamentID hidden="hidden" value=@item.ID />
+                    <input type="submit" value="Register"/>
+                    </form>
+                }
+            </div>
+        }
+    }
+else
+{
+    <h2 class="text-center" top=5%>No tournaments are available</h2>
+}
+

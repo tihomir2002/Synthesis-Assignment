@@ -1,0 +1,31 @@
+﻿@page
+@model SynthesisSite.Pages.IndexModel
+@{
+    ViewData["Title"] = "DuelSys Inc.";
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <partial name = "_ValidationScriptsPartial" />
+}
+
+<div id="Welcome">
+    <h2 class="display-4">Welcome to @ViewData["Title"]</h2>
+</div>
+
+<div id="Form">
+    <form method="post">
+        <label asp-for="user.Username">Username:</label>
+        <span asp-validation-for="user.Username"></span>
+        <input type="text" asp-for="user.Username" value=@PageContext.HttpContext.Session.GetString("username")/>
+
+        <label asp-for="user.Password">Password:</label>
+        <span asp-validation-for="user.Password"></span>
+        <input type="password" asp-for="user.Password" value=@PageContext.HttpContext.Session.GetString("password")/>
+        
+        <div>
+            <label>Remember Me</label>
+            <input type="checkbox" asp-for="user.RememberMe" checked=@(!string.IsNullOrWhiteSpace(PageContext.HttpContext.Session.GetString("password")))/>
+        </div>
+        <div>
+            <input id="SubmitBtn" type="submit" value="Login" />
+        </div>
+    </form>
+</div>

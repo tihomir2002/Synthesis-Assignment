@@ -1,0 +1,56 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SynthesisSite
+build_property.RootNamespace = SynthesisSite
+build_property.ProjectDir = D:\Projects\VisualStudio\s2-synthesis-assignment-development\SynthesisSite\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Projects\VisualStudio\s2-synthesis-assignment-development\SynthesisSite
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Projects/VisualStudio/s2-synthesis-assignment-development/SynthesisSite/Pages/AllTournaments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsVG91cm5hbWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/s2-synthesis-assignment-development/SynthesisSite/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/s2-synthesis-assignment-development/SynthesisSite/Pages/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/s2-synthesis-assignment-development/SynthesisSite/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/s2-synthesis-assignment-development/SynthesisSite/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/s2-synthesis-assignment-development/SynthesisSite/Pages/StartedTournaments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhcnRlZFRvdXJuYW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/s2-synthesis-assignment-development/SynthesisSite/Pages/Tournaments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG91cm5hbWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/s2-synthesis-assignment-development/SynthesisSite/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/s2-synthesis-assignment-development/SynthesisSite/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/s2-synthesis-assignment-development/SynthesisSite/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yamu40yyh0

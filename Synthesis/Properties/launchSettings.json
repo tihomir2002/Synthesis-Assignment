@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Synthesis": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\Projects\\VisualStudio\\SynthesisProject\\SynthesisSite"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+﻿#Welcome{
+    text-align:center;
+}
+
+form {
+    text-align:center;
+    display: grid;
+    justify-content: center;
+    gap: 4px;
+    width: 25%;
+    margin-left:36.5%;
+}
+
+#SubmitBtn {
+    color: black;
+    margin-top: 2%;
+    background-color: cadetblue;
+    border-radius: 25%;
+}
+
+#SubmitBtn:hover {
+        background-color: lightgrey;
+        border-radius: 10%;
+        transition-duration: 0.4s;
+}
+
+input{
+    border-radius:10%;
+}
+
+textarea{
+    resize:none;
+}
+
+label {
+    color: white;
+}
+
+header,a{
+    visibility: hidden;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:steelblue;
+}
+
+span{
+    color:white;
+}

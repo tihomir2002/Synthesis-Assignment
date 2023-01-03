@@ -1,0 +1,27 @@
+﻿@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Error";
+}
+    <link rel="stylesheet" href="~/css/error.css" asp-append-version="true" />
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+@if (Model.ShowRequestId)
+{
+        <p>Request ID:</p> <code>@Model.RequestId</code>
+}
+
+<h3>@Model.Error Error</h3>
+@if(Model.Error=="VPN")
+{
+    <p>You need a VPN connection to actively use this website.</p>
+}
+else if(Model.Error=="Login") {
+    <p>An error occured make sure you typed your credentials correctly.</p>
+}
+else
+{
+    <p>An unknown error occured.</p>
+}

@@ -1,0 +1,64 @@
+﻿@page
+@model SynthesisSite.Pages.AllTournamentsModel
+@{
+    ViewData["Title"] = "All tournaments";
+}
+
+    @if (@Model.Tournaments.Count > 0)
+    {
+        <div>
+            <form method="post">
+                <label for="gsearch">Search tournament by ID:</label>
+                <input type="number" value = 0 asp-for="SearchedID">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <br></br>
+
+        @foreach (var item in @Model.Tournaments)
+        {
+            <div id="torunamentDIV">
+                
+                @item.ToString()
+                
+                Name: @item.Name
+                Description: @item.Description
+                Location: @item.Location
+                Duration in days:@item.DurationDays
+                Sport: @item.Sport.Name
+                System: @item.TournamentSystem.Name
+                Minimum players: @item.MinPlayers
+                Maximum players: @item.MaxPlayers
+                Current players: @item.RegisteredPlayers
+                Start date: @item.StartDate.ToString()
+
+                <div id="playersDIV">
+                @{
+                    var players = TournamentTable.GetParticipatingPlayers(item.ID,true);
+                    @if(players.Count>0)
+                    {
+                            <ul>
+                                @foreach(var player in players)
+                                {
+                                  <li>@player.ToString()</li>
+                                }
+                            </ul> 
+                        if (players.Count < @item.MinPlayers)
+                        {
+                            <br />
+                            <p>Not enough players are registrated for this tournaments.</p>
+                        }
+                    }  
+                    else 
+                    {
+                        <p>No players are participating</p>
+                    }  
+                }
+                </div>
+            </div>
+        }
+    }
+else
+{
+    <h2 class="text-center" top=5%>No tournaments are available</h2>
+}

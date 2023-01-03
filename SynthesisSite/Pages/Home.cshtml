@@ -1,0 +1,7 @@
+﻿@page
+@model SynthesisSite.Pages.HomeModel
+@{
+    ViewData["Title"] = "Homepage";
+}
+
+<h2>Welcome @HttpContext.Session.GetString("userType") to DuelSys Inc.</h2>
